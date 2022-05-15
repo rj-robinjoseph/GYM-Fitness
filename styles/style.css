@@ -12,7 +12,7 @@
 .navbar {
   background: var(--black);
   height: 60px;
-  padding: 0.5rem 2.5rem;
+  padding: 0.5rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,3 +114,51 @@
 }
 
 /* Hero Section */
+
+.hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)),
+    url("../images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero__content {
+  color: var(--white);
+  padding: 3rem 1rem;
+  line-height: 1;
+}
+
+.hero__content h1 {
+  margin: unset;
+  font-size: clamp(3rem, 8vw, 7rem);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.hero__content p {
+  font-size: clamp(1rem, 4vw, 2.5rem);
+  margin-bottom: 3rem;
+}
+
+.button {
+  padding: 1rem 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: var(--red);
+  color: var(--white);
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: var(--black);
+}
