@@ -178,6 +178,11 @@
 .services__img {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
+  background: url(../images/gym-2.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: background 0.5s linear;
 }
 
 .topline {
