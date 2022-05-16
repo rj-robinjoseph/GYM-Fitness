@@ -215,6 +215,91 @@
   .services__container {
     grid-template-columns: 1fr;
   }
+
+  .services__img {
+    height: clamp(255px, 360px, 440px);
+  }
 }
 
 /* Membership section */
+.membership__section {
+  background: var(--black);
+  color: var(--white);
+  padding: 6rem calc((100vw-1100px) / 2);
+  text-align: center;
+}
+
+.membership__section h1 {
+  margin: unset;
+  margin-bottom: 1rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+  padding: 2rem 1rem 0;
+}
+
+.membership__desc {
+  margin-bottom: 3rem;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  padding: 1rem;
+}
+
+.membership__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.membership__card {
+  padding: 2rem;
+  margin: 0 1.5rem;
+  height: 450px;
+  width: 325px;
+  background: var(--white);
+  color: var(--black);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.membership__perks {
+  min-height: 150px;
+}
+
+.membership__perks p {
+  margin-bottom: 1rem;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--red);
+}
+
+.membership__card h3 {
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .membership__card {
+    height: 500px;
+    margin: 0 1rem;
+  }
+
+  .membership__card h3 {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .membership__wrapper {
+    flex-direction: column;
+  }
+
+  .membership__card {
+    height: 450px;
+    margin: 1rem 1rem;
+  }
+}
+
+/* Team Section */
