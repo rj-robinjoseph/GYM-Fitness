@@ -342,6 +342,7 @@
   left: 25px;
   font-size: 2.5rem;
   font-weight: 500;
+  z-index: 10;
 }
 
 .team__card img {
